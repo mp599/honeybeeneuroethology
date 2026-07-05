@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>News — Honey Bee Neuroethology Lab</title>
+<style>
+  :root{
+    --red: #D7261E;
+    --yellow: #F3C000;
+    --blue: #1B4EA0;
+    --black: #141414;
+    --ink: #1a1a1a;
+    --paper: #ffffff;
+    --accent: var(--black);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    background-color: var(--paper);
+    color:var(--ink);
+    font-family: Futura, "Century Gothic", "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .backlink{
+    display:block;
+    padding: 2.2rem 1.5rem 0;
+    font-size:0.8rem;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:#555;
+    text-decoration:none;
+  }
+  .backlink:hover{ color:var(--ink); }
+  main{
+    max-width:768px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+  }
+  main h1{
+    margin:0;
+    font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+    font-weight:700;
+    letter-spacing:0.02em;
+    text-transform:uppercase;
+  }
+  .accent-bar{
+    width:64px;
+    height:8px;
+    background: var(--accent);
+    border: 2px solid var(--black);
+    margin: 1rem 0 2.2rem;
+  }
+  main p{
+    color:#444;
+    line-height:1.7;
+    font-size:1.02rem;
+  }
+
+  .post{
+    padding: 1.8rem 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .post:first-child{ padding-top:0; }
+  .post:last-child{ border-bottom:none; }
+  .post.award{ --post-color: var(--yellow); }
+  .post.workshop{ --post-color: var(--blue); }
+
+  .post .tag{
+    display:inline-block;
+    background: var(--post-color);
+    color: var(--black);
+    border: 2px solid var(--black);
+    padding: 3px 9px;
+    font-size:0.68rem;
+    font-weight:700;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+  }
+  .post.workshop .tag{ color:#fff; }
+  .post .date{
+    display:flex;
+    align-items:center;
+    gap:0.6rem;
+    font-size:0.78rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:#999;
+    margin: 0 0 0.5rem;
+  }
+  .post .headline{
+    margin: 0 0 1rem;
+    font-size:1.2rem;
+    font-weight:700;
+    line-height:1.3;
+    color: var(--ink);
+  }
+  .post p{
+    margin: 0 0 0.8rem;
+    font-size:0.98rem;
+  }
+  .post .links a{
+    color: var(--ink);
+    font-weight:700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .post .links a:not(:last-child)::after{
+    content: "  ·  ";
+    text-decoration:none;
+    color:#bbb;
+  }
+
+  .post-media{
+    display:flex;
+    gap: 1.5rem;
+    align-items:flex-start;
+  }
+  .post-media .thumb{
+    flex: 0 0 25%;
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    overflow:hidden;
+    border: 2px solid var(--black);
+  }
+  .post-media .thumb img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+  .post-media .body{
+    flex: 0 0 75%;
+    width: 75%;
+    min-width:0;
+  }
+  .post-media .body p:not(.links){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    line-height:1.5;
+  }
+  @media (max-width: 480px){
+    .post-media{ flex-direction:column; }
+    .post-media .thumb, .post-media .body{ width:100%; flex-basis:auto; }
+  }
+</style>
+</head>
+<body>
+<a class="backlink" href="index.html">&larr; Home</a>
+<main>
+  <h1>News</h1>
+  <div class="accent-bar"></div>
+
+  <article class="post award">
+    <p class="date"><span class="tag">Award</span> July 2026</p>
+    <h3 class="headline">Léa Droesbeke-Fuente awarded a Hamilton Syringe Grant</h3>
+    <div class="post-media">
+      <div class="thumb">
+        <img src="assets/hamilton_grant_hero.jpg" alt="Close-up of honey bees on honeycomb, from Léa's Hamilton Syringe Grant testimonial">
+      </div>
+      <div class="body">
+        <p>Léa Droesbeke-Fuente, first-year PhD student in the lab, has been awarded a €1,000 Hamilton Syringe Grant for her project investigating the neural basis of emotional states in honey bees. Congratulations, Léa!</p>
+        <p class="links">
+          <a href="https://www.hamiltoncompany.com/hamilton-grants/syringe-grants/testimonials/investigating-the-neural-basis-of-emotional-states-in-honey-bees" target="_blank" rel="noopener">Read Léa's testimonial</a>
+          <a href="https://www.hamiltoncompany.com/hamilton-grants/syringe-grants" target="_blank" rel="noopener">About the Syringe Grants program</a>
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <article class="post workshop">
+    <p class="date"><span class="tag">Workshop</span> June 2026</p>
+    <h3 class="headline">TRex Workshop: Markerless Animal Tracking</h3>
+    <div class="post-media">
+      <div class="thumb">
+        <img src="assets/trex_workshop_demo.gif" alt="Screen recording of the TRex tracking software following a bee's body axis and trajectory in a circular arena">
+      </div>
+      <div class="body">
+        <p>The lab hosted a 3-day hands-on workshop on TRex, a markerless multi-animal tracking software, taught by its developers Dr. Tristan Walter and Dr. Angela Albi (Max Planck Institute for Animal Behavior, Konstanz, Germany). Held at CSGA and supported by the Forthem Alliance, the course brought together PhD students, postdocs, and researchers in biology, neuroscience, and ethology for hands-on training in state-of-the-art, tag-free tracking techniques.</p>
+        <p class="links">
+          <a href="assets/trex_workshop_poster.png" target="_blank" rel="noopener">View the workshop poster</a>
+          <a href="https://workshop.trex.run" target="_blank" rel="noopener">TRex workshop tutorial</a>
+          <a href="https://trex.run/docs/" target="_blank" rel="noopener">TRex documentation</a>
+          <a href="https://www.forthem-alliance.eu" target="_blank" rel="noopener">Forthem Alliance</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+</body>
+</html>

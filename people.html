@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>People — Honey Bee Neuroethology Lab</title>
+<style>
+  :root{
+    --red: #D7261E;
+    --yellow: #F3C000;
+    --blue: #1B4EA0;
+    --black: #141414;
+    --ink: #1a1a1a;
+    --paper: #ffffff;
+    --accent: var(--yellow);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    background-color: var(--paper);
+    color:var(--ink);
+    font-family: Futura, "Century Gothic", "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .backlink{
+    display:block;
+    padding: 2.2rem 1.5rem 0;
+    font-size:0.8rem;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:#555;
+    text-decoration:none;
+  }
+  .backlink:hover{ color:var(--ink); }
+  main{
+    max-width:820px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+  }
+  main h1{
+    margin:0;
+    font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+    font-weight:700;
+    letter-spacing:0.02em;
+    text-transform:uppercase;
+  }
+  .accent-bar{
+    width:64px;
+    height:8px;
+    background: var(--accent);
+    border: 2px solid var(--black);
+    margin: 1rem 0 2.2rem;
+  }
+
+  .people-list{
+    display:flex;
+    flex-direction:column;
+    gap: 2.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .person-row{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.6rem;
+    align-items:start;
+    padding-bottom: 2.6rem;
+    border-bottom: 1px solid #eee;
+  }
+  .person-row:last-child{
+    border-bottom:none;
+    padding-bottom:0;
+  }
+
+  .photo{
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--black);
+    overflow:hidden;
+  }
+  .photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    filter: grayscale(1) contrast(1.12);
+  }
+
+  .info .name-bar{
+    width:44px;
+    height:6px;
+    margin: 0.2rem 0 0.7rem;
+  }
+  .person-row[data-color="black"] .name-bar{ background: var(--black); }
+  .person-row[data-color="red"] .name-bar{ background: var(--red); }
+  .person-row[data-color="yellow"] .name-bar{ background: var(--yellow); }
+  .person-row[data-color="blue"] .name-bar{ background: var(--blue); }
+
+  .p-name{
+    font-weight:700;
+    font-size: clamp(1rem, 2.6vw, 1.25rem);
+    margin:0;
+    line-height:1.25;
+  }
+  .p-role{
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:#777;
+    margin: 0.2rem 0 0;
+  }
+  .p-bio{
+    font-size: clamp(0.85rem, 1.9vw, 0.98rem);
+    line-height:1.6;
+    color:#444;
+    margin: 0.9rem 0;
+  }
+  .p-email a{
+    font-size:0.85rem;
+    color: var(--ink);
+    font-weight:700;
+    text-decoration:underline;
+    text-underline-offset:2px;
+  }
+  .p-readmore{
+    margin: 0.9rem 0 0;
+  }
+  .p-readmore a{
+    font-size:0.85rem;
+    color: var(--ink);
+    font-weight:700;
+    text-decoration:underline;
+    text-underline-offset:2px;
+  }
+
+  @media (max-width: 560px){
+    .person-row{
+      grid-template-columns: 1fr;
+    }
+    .photo{ max-width: 220px; }
+  }
+</style>
+</head>
+<body>
+<a class="backlink" href="index.html">&larr; Home</a>
+<main>
+  <h1>People</h1>
+  <div class="accent-bar"></div>
+
+  <div class="people-list">
+
+    <div class="person-row" data-color="black">
+      <div class="photo">
+        <img src="assets/people_groupleader.png" alt="Marco Paoli">
+      </div>
+      <div class="info">
+        <div class="name-bar"></div>
+        <p class="p-name">Marco Paoli</p>
+        <p class="p-role">Group Leader</p>
+        <p class="p-bio">Studies olfactory coding, perception, and learning in honey bees and other insects.</p>
+        <p class="p-email"><a href="mailto:marco.paoli@ube.fr">marco.paoli@ube.fr</a></p>
+        <p class="p-readmore"><a href="bio.html">Read full bio &rarr;</a></p>
+      </div>
+    </div>
+
+    <div class="person-row" data-color="red">
+      <div class="photo">
+        <img src="assets/people_phd1.jpg" alt="PhD Student">
+      </div>
+      <div class="info">
+        <div class="name-bar"></div>
+        <p class="p-name">PhD Student</p>
+        <p class="p-role">PhD Candidate</p>
+        <p class="p-bio">Working on insect olfactory learning and sensory coding, with a focus on how internal state and prior experience shape perception and behavior in social insects. Combines behavioral assays with in vivo functional imaging.</p>
+        <p class="p-email"><a href="mailto:phd1@ube.fr">phd1@ube.fr</a></p>
+      </div>
+    </div>
+
+    <div class="person-row" data-color="yellow">
+      <div class="photo">
+        <img src="assets/people_phd2.jpg" alt="PhD Student">
+      </div>
+      <div class="info">
+        <div class="name-bar"></div>
+        <p class="p-name">PhD Student</p>
+        <p class="p-role">PhD Candidate</p>
+        <p class="p-bio">Investigating chemical communication and pheromone-driven behavior in honey bees, using behavioral assays combined with neurophysiological recordings to link signal perception to changes in brain activity.</p>
+        <p class="p-email"><a href="mailto:phd2@ube.fr">phd2@ube.fr</a></p>
+      </div>
+    </div>
+
+    <div class="person-row" data-color="blue">
+      <div class="photo">
+        <img src="assets/people_phd3.jpg" alt="PhD Student">
+      </div>
+      <div class="info">
+        <div class="name-bar"></div>
+        <p class="p-name">PhD Student</p>
+        <p class="p-role">PhD Candidate</p>
+        <p class="p-bio">Studying the effects of environmental and dietary factors on insect cognition, combining Drosophila and honey bee models to probe how sensory processing and learning interact under ecologically realistic conditions.</p>
+        <p class="p-email"><a href="mailto:phd3@ube.fr">phd3@ube.fr</a></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
